@@ -1,0 +1,146 @@
+.weather {
+  place-self: center;
+  padding: 40px;
+  border-radius: 10px;
+  background-image: linear-gradient(45deg, #142188, #42456e);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.search-bar input {
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding-left: 25px;
+  color: #626262;
+  background: #ebfffc;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.search-bar input:hover {
+  background-color: #d0f0e0;
+  transform: translateY(-2px);
+}
+.search-bar input:focus {
+  background-color: #b8e6c8;
+}
+
+.search-bar img {
+  width: 50px;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #ebfffc;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.search-bar img:hover {
+  background-color: #d0f0e0;
+  transform: translateY(-2px);
+}
+
+.search-bar button {
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding: 0 20px;
+  background-color: #ebfffc;
+  color: #142188;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.search-bar button:hover {
+  background-color: #d0f0e0;
+  transform: translateY(-2px);
+}
+.search-bar button:active {
+  background-color: #b8e6c8;
+  transform: translateY(1px);
+}
+
+.weather-icon {
+  width: 150px;
+  margin: 15px 0px;
+}
+.temperature {
+  color: #fff;
+  font-size: 80px;
+  line-height: 1;
+}
+.location {
+  color: #fff;
+  font-size: 40px;
+}
+.weather-data {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.weather-data .col {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 22px;
+}
+.weather-data .col span {
+  display: block;
+  font-size: 16px;
+}
+.weather-data .col img {
+  width: 26px;
+  margin-top: 10px;
+}
+.history {
+  margin-top: 20px;
+  width: 100%;
+  overflow-y: auto;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform-origin: top;
+  opacity: 0;
+  max-height: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease, visibility 0.5s ease;
+}
+.history.active {
+  opacity: 1;
+  max-height: 200px;
+  visibility: visible;
+}
+.history p {
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.history p:hover {
+  background-color: #d0f0e0;
+  transform: translateY(-2px);
+}
+.history::-webkit-scrollbar {
+  width: 8px;
+}
+.history::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+.history::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 8px;
+}
+.history::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}

@@ -65,4 +65,4 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ## Contact
 
-For any inquiries or suggestions, feel free to reach out via email at `your-email@example.com` or open an issue in the repository.
+For any inquiries or suggestions, feel free to reach out via email at `jainmanik364@gmail.com` or open an issue in the repository.
